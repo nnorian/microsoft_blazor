@@ -1,0 +1,21 @@
+﻿<h3>EventCard</h3>
+
+@code {
+    [Parameter]
+    public string EventName { get; set; } = string.Empty;
+
+    [Parameter]
+    public DateTime EventDate { get; set; }
+
+    [Parameter]
+    public string Location { get; set; } = string.Empty;
+
+}
+
+<div class="card m-3 p-3 shadow-sm rounded">
+    <h3>@EventName</h3>
+    <p>
+        <strong>Date: </strong>@EventDate.ToString("MMMM dd, yyyy")
+    </p>
+    <p><strong>Location: </strong>@Location</p>
+</div>
