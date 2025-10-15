@@ -1,0 +1,47 @@
+﻿@page "/register"
+@inject EventEase.Data.SessionState Session
+@inject NavigattionManner Nav
+
+@* dependancy injection - dessign pattern when an instance of a registered
+service is provided to the corrent component
+
+aka the class recieves its dependencies from an external source rather that creating 
+then internally *@
+
+<EditForm Model="@user" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+
+    <div class="mb-3">
+        <label>Name: </label>
+        <InputText class="form-control" @bind-Value="user.Name" />
+    </div>
+
+    <div class="mb-3">
+        <label>Email: </label>
+        <InputText class="form-control" @bind-Value="user.Email" />
+    </div>
+
+   <button class="btn btn-success" type="submit">Submit</button>
+</EditForm>
+
+@code {
+    private UserModel user = new();
+    private void HandleValidSubmit()
+    {
+        Session.UserName = user.Name;
+        Session.UserEmail = user.Email;
+        Nav.NavigateTo("/");   
+    }
+    
+    public class UserModel
+    {
+        [Required]
+        public string Name {get; set;} = string.Empty;
+
+       [Required, EmailAddress]
+        public string Email {get; set;} = string.Empty;
+    }
+
+}

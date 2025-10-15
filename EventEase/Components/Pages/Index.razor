@@ -1,34 +1,15 @@
 ﻿@page "/"
+@inject NavigtionManager Nav
+@inject EventEase.Data.SessionState Session
 
-<h1>Upcoming Events</h1>
 
-@foreach (var evt in Events)
-{
-    <EventCard EventName="@evt.EventName" EventDate="@evt.EventDate" Location = "@evt.Location" />
-}
-@code {
-    private List<EventModel> Events = new()
-    {
-        new EventModel         {
-            EventName = "Programmers Day 2025",
-            EventDate = new DateTime(2025, 09, 24),
-            Location = "Chisinau, Republic of Moldova"
-        },
 
-        new EventModel
-        {
-            EventName = "Summer FAF x Sigomid Hackathon 2025",
-            EventDate = new DateTime(2025, 06, 20),
-            Location = "Chisinau, Republic of Moldova"
-        }
-    };
+<h2>Wellcome to EventEase</h2>
 
-    public class EventModel
-    {
-        public string EventName { get; set; } = string.Empty;
-        public DateTime EventDate { get; set; }
-        public string Location { get; set; } = string.Empty;
+@if (Session.IsRegistered){
 
-    }
-
-}
+   <p>Hello, <b>@Session.UserName</b>! Chacko out the available events:</p>
+    <button class="btn btn-secondary" @onclick="() => Nav.NavigateTo("/events")">View Event Details</button>
+} else {
+    <p>You are not registered yet.</p>
+    <button class="btn btn-primary" @onclick="() => Nav.NavigateTo("/register")">Register Now</button>}
