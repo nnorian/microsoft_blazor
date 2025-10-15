@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t+JQRR9xqKI=",
+  "dgSpecHash": "jAWUObYKtvE=",
   "success": true,
-  "projectFilePath": "C:\\dotnet_projects\\microsoft_fullstack\\EventEase\\EventEase.csproj",
+  "projectFilePath": "C:\\dotnet_projects\\microsoft_blazor\\EventEase\\EventEase.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

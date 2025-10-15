@@ -1,0 +1,29 @@
+﻿@page "/events"
+@inject EventEase.Data.EventService EventService
+@inject EventEase.Data.SessionState Session
+
+<h3>Upcoming Events</h3>
+
+@if (!Session.IsRegistered)
+{
+    <p class="text-danger">Please register before viewing or joining events.</p>
+}
+else
+{
+    @foreach (var ev in EventService.GetAllEvents())
+    {
+        <EventCard Event="ev" OnRegister="HandleRegistration" />
+    }
+}
+
+@code {
+    private void HandleRegistration(int eventId)
+    {
+        var ev = EventService.GetEventById(eventId);
+        if (ev != null)
+        {
+            ev.Attendees++;
+            StateHasChanged();
+        }
+    }
+}

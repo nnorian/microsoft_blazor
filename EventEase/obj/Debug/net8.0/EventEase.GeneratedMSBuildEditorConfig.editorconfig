@@ -36,30 +36,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFdmVudENhcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet_projects/microsoft_blazor/EventEase/Components/Pages/EventDetails.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFdmVudERldGFpbHMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/dotnet_projects/microsoft_blazor/EventEase/Components/Pages/EventRegistration.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFdmVudFJlZ2lzdHJhdGlvbi5yYXpvcg==
+[C:/dotnet_projects/microsoft_blazor/EventEase/Components/Pages/Events.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFdmVudHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/dotnet_projects/microsoft_blazor/EventEase/Components/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/dotnet_projects/microsoft_blazor/EventEase/Components/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/dotnet_projects/microsoft_blazor/EventEase/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet_projects/microsoft_blazor/EventEase/Components/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+[C:/dotnet_projects/microsoft_blazor/EventEase/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet_projects/microsoft_blazor/EventEase/Components/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-ok0suno75m
+[C:/dotnet_projects/microsoft_blazor/EventEase/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-72osl0plp5
 
-[C:/dotnet_projects/microsoft_blazor/EventEase/Components/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-vwkrn3thuy
+[C:/dotnet_projects/microsoft_blazor/EventEase/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-z2ef545u2c

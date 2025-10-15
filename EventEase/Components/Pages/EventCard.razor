@@ -1,22 +1,15 @@
 ﻿@using EventEase.Data
+@using Microsoft.AspNetCore.Components
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Event.EventName</h5>
+        <p class="card-text">Location: @Event.Location</p>
+        <p class="card-text">Attendees: @Event.Attendees</p>
+    </div>
+</div>
 
 @code {
     [Parameter]
-    public EventModel Event { get; set; } = new();
-
-    [Parameter]
-    public EventCallback<int> OnRegister { get; set; }
-
-    private async Task RegisterForEvent(int id){
-    await OnRegister.InvokeAsync(id);
-    }
-
-
+    public EventModel Event { get; set; } = new EventModel();
 }
-
-<div class="card m-3 p-3 shadow-sm rounded">
-    <h3>@EventTitle</h3>
-    <p><strong>Location: </strong>@Location</p>
-    <p><strong>Atendees: </strong>@Atendees</p>
-    <button class="btn  btn-primary" @onclick="() => RegisterForEvent(Event.Id)">Register</button>
-</div>
